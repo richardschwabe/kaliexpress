@@ -12,10 +12,10 @@
     dest: ~/.local/share/fonts/
 
 - name: Install a color versions
-  ansible.builtin.apt:
+  apt:
     pkg:
     - exa
 
 - name: Install a Chrome via online .deb
-ansible.builtin.apt:
-  deb: https://www.google.com/chrome/next-steps.html?brand=YTUH&platform=linux&statcb=0&installdataindex=empty&defaultbrowser=0#
+  apt:
+    deb: https://www.google.com/chrome/next-steps.html?brand=YTUH&platform=linux&statcb=0&installdataindex=empty&defaultbrowser=0#
