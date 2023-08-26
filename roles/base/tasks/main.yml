@@ -6,21 +6,9 @@
     update_cache: true
     upgrade: false
 
-- name: Check if we have python3 installed
-  shell: command -v python3
-  register: python3_result
-  changed_when: false
-
-- name: Check if we have pipx installed
-  shell: command -v pipx
-  register: pipx_result
-  when: "'not found' not in python3_result.stdout"
-  changed_when: false
-
-- name: "Install pipx if not exists"
-  command: pip install pipx
-  when: "'not found' in pipx_result.stdout"
-  register: pipx_install_result
+- name: Install pipx
+  ansible.builtin.pip:
+    name: pipx
 
 - include_tasks: pipx.yml
 - include_tasks: personal.yml
