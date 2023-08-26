@@ -1,5 +1,10 @@
 ---
 
+- name: Add MS Repo to Apt
+  become: True
+  script: add-ms-apt.sh
+
+
 - name: Update & Upgrade
   become: True
   apt:

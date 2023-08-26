@@ -49,6 +49,7 @@
     pkg:
     - exa
     - bat
+    - code
 
 - name: Install a Chrome via online .deb
   become: true
