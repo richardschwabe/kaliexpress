@@ -1,5 +1,12 @@
+- name: Check if Oh My Zsh exists
+  stat:
+    path: ~/.oh-my-zsh
+  register: ohmyzsh_folder
+
+
 - name: Install Oh My Zsh
   shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  when: not ohmyzsh_folder.stat.exists
 
 - name: Create Local Share Fonts Folder
   file:
