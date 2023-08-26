@@ -1,3 +1,16 @@
+- name: Install Oh My Zsh
+  command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+- name: Create Local Share Fonts Folder
+  path: ~/.local/share/fonts
+  state: directory
+  mode: "u=rw,g=r,o=r"
+
+- name: Copy MeloLGS Fonts over
+  copy:
+    src: fonts/*.ttf
+    dest: ~/.local/share/fonts/
+
 - name: Install a color versions
   ansible.builtin.apt:
     pkg:
