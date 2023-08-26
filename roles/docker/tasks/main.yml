@@ -6,6 +6,8 @@
   apt:
     pkg:
     - docker.io
+    - docker-compose-plugin
+
 - name: Enable Docker Service
   become: True
   service:
