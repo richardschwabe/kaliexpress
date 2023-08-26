@@ -1,6 +1,7 @@
 ---
 
 - name: Update & Upgrade
+  become: True
   apt:
     update_cache: true
     upgrade: dist
