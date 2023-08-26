@@ -1,0 +1,10 @@
+- name: Ensure Docker Group Exists
+  group:
+    name: docker
+    state: present
+
+- name: Add user to the docker role
+  user:
+    name: "{{ user.name }}"
+    groups: docker
+    append: yes

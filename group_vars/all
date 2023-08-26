@@ -1,0 +1,8 @@
+user:
+    name: CHANGME
+    uid: 1000
+    group: CHANGME
+
+pipx_packages:
+    - git+https://github.com/mpgn/CrackMapExec
+    - git+https://github.com/owasp-amass/amass

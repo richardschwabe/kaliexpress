@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: portainer-ce:latest
+    restart: always
+    ports:
+      - 9443:9443
+      - 8000:8000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
