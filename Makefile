@@ -1,2 +1,2 @@
 install:
-	ansible-playbook --ask-become
+	ansible-playbook playbook.yml --ask-become
