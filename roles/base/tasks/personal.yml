@@ -14,10 +14,10 @@
     mode: 0755
     state: directory
 
-- name: Copy MeloLGS Fonts over
+- name: Copy MeloLGS Bold Italic
   copy:
-    src: fonts/*.ttf
-    dest: ~/.local/share/fonts/
+    src: "fonts/MesloLGS NF Bold Italic.ttf"
+    dest: "~/.local/share/fonts/MesloLGS NF Bold Italic.ttf"
 
 - name: Install a color versions
   apt:
