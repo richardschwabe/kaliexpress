@@ -3,6 +3,10 @@
     path: ~/.oh-my-zsh
   register: ohmyzsh_folder
 
+- name: Check if powerlevel10k exists
+  stat:
+    path: ~/.oh-my-zsh/custom/themes/powerlevel10k
+  register: powerlevel10k_folder
 
 - name: Install Oh My Zsh
   shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -36,7 +40,7 @@
 
 - name: Install Powerlevel10k
   shell: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
+  when: not powerlevel10k_folder.stat.exists
 
 - name: Copy .zshrc
   copy:
