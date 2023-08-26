@@ -9,7 +9,7 @@
 - name: Copy portainer config over
   copy:
     src: portainer.yml
-    dst: ~/docker/portainer/portainer.yml
+    dest: ~/docker/portainer/portainer.yml
 
 - name: Start portainer in background
   shell: docker compose up -d ~/docker/portainer/portainer.yml
