@@ -34,14 +34,17 @@
     src: "fonts/MesloLGS NF Regular.ttf"
     dest: "~/.local/share/fonts/MesloLGS NF Regular.ttf"
 
+- name: Install Powerlevel10k
+  shell: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 - name: Install a color versions
   become: true
   apt:
     pkg:
     - exa
+    - bat
 
 - name: Install a Chrome via online .deb
   become: true
   apt:
-    deb: https://www.google.com/chrome/next-steps.html?brand=YTUH&platform=linux&statcb=0&installdataindex=empty&defaultbrowser=0#
+    deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
