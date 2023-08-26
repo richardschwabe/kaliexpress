@@ -19,11 +19,29 @@
     src: "fonts/MesloLGS NF Bold Italic.ttf"
     dest: "~/.local/share/fonts/MesloLGS NF Bold Italic.ttf"
 
+- name: Copy MeloLGS Italic
+  copy:
+    src: "fonts/MesloLGS NF Italic.ttf"
+    dest: "~/.local/share/fonts/MesloLGS NF Italic.ttf"
+
+- name: Copy MeloLGS Bold
+  copy:
+    src: "fonts/MesloLGS NF Bold.ttf"
+    dest: "~/.local/share/fonts/MesloLGS NF Bold.ttf"
+
+- name: Copy MeloLGS Regular
+  copy:
+    src: "fonts/MesloLGS NF Regular.ttf"
+    dest: "~/.local/share/fonts/MesloLGS NF Regular.ttf"
+
+
 - name: Install a color versions
+  become: true
   apt:
     pkg:
     - exa
 
 - name: Install a Chrome via online .deb
+  become: true
   apt:
     deb: https://www.google.com/chrome/next-steps.html?brand=YTUH&platform=linux&statcb=0&installdataindex=empty&defaultbrowser=0#
