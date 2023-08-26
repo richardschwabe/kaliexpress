@@ -1,7 +1,5 @@
 user:
-    name: CHANGME
-    uid: 1000
-    group: CHANGME
+    name: bs
 
 pipx_packages:
     - git+https://github.com/mpgn/CrackMapExec

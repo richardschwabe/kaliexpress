@@ -1,5 +1,23 @@
 ---
-# tasks file for roles/docker
-
 - include_tasks: user_group.yml
+
+- name: Install docker
+  become: true
+  apt:
+    pkg:
+    - docker.io
+- name: Enable Docker Service
+  become: True
+  service:
+    enabled: True
+    name: docker
+    state: started
+
+- name: Make sure docker directory exists for our services
+  file:
+    path: ~/docker
+    mode: 0755
+    state: directory
+
+
 - include_tasks: portainer.yml

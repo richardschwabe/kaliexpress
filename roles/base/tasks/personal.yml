@@ -47,13 +47,14 @@
     src: ".zshrc"
     dest: "~/.zshrc"
 
-- name: Install a color versions
+- name: Install some apps
   become: true
   apt:
     pkg:
     - exa
     - bat
     - code
+    - dbeaver
 
 - name: Install a Chrome via online .deb
   become: true

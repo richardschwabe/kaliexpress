@@ -1,4 +1,5 @@
 - name: Ensure Docker Group Exists
+  become: True
   group:
     name: docker
     state: present
