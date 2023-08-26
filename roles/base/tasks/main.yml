@@ -4,8 +4,7 @@
   become: True
   apt:
     update_cache: true
-    upgrade: dist
-
+    upgrade: false
 
 - name: Check if we have python3 installed
   shell: command -v python3
