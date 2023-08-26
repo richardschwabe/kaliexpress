@@ -2,9 +2,10 @@
   command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 - name: Create Local Share Fonts Folder
-  path: ~/.local/share/fonts
-  state: directory
-  mode: "u=rw,g=r,o=r"
+  file:
+    path: ~/.local/share/fonts
+    mode: "u=rw,g=r,o=r"
+    state: directory
 
 - name: Copy MeloLGS Fonts over
   copy:
