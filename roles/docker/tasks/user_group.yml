@@ -5,6 +5,7 @@
     state: present
 
 - name: Add user to the docker role
+  become: True
   user:
     name: "{{ user.name }}"
     groups: docker
