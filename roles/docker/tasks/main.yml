@@ -9,7 +9,7 @@
   become: true
   apt:
     pkg:
-    - docker.io
+    - docker-ce
     - docker-compose-plugin
 
 - name: Enable Docker Service
