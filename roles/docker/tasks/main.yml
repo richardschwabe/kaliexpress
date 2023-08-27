@@ -1,6 +1,10 @@
 ---
 - include_tasks: user_group.yml
 
+- name: Add Docker Repo to Apt
+  become: True
+  script: add-docker-apt.sh
+
 - name: Install docker
   become: true
   apt:
