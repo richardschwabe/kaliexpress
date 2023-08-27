@@ -12,4 +12,4 @@
     dest: ~/docker/portainer/portainer.yml
 
 - name: Start portainer in background
-  shell: docker compose up -d ~/docker/portainer/portainer.yml
+  shell: docker compose up -d -f ~/docker/portainer/portainer.yml
