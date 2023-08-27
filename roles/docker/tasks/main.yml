@@ -8,6 +8,7 @@
 - name: Install docker
   become: true
   apt:
+    update_cache: true
     pkg:
     - docker-ce
     - docker-compose-plugin

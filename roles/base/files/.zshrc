@@ -280,6 +280,6 @@ alias ll='ls -lah'
 alias la='ls -lah'
 alias l='ls -lh'
 
-alias cat='bat'
+alias cat='batcat'
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
