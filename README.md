@@ -7,6 +7,7 @@
 # Table Of Contents
 - [Table Of Contents](#table-of-contents)
 - [Overview](#overview)
+- [How to use](#how-to-use)
 - [Details](#details)
     - [base](#base)
     - [docker](#docker)
@@ -24,6 +25,19 @@ Adjust Kali to my liking, incl:
 - Preferred Apps
 
 
+# How to use
+Make sure you have ansible installed
+
+```
+sudo apt install ansible
+```
+
+Simply clone the repo and run make
+```
+git clone https://github.com/richardschwabe/kaliexpress.git
+
+cd kaliexpress && make
+```
 
 
 # Details
