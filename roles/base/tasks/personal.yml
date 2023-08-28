@@ -67,3 +67,7 @@
   apt:
     deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     state: present
+
+
+- name: Change Desktop Background
+  script: change-bg.sh
