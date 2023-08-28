@@ -60,6 +60,7 @@
     - bat
     - code
     - dbeaver
+    - seclists
     state: present
 
 - name: Install a Chrome via online .deb
