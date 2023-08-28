@@ -71,3 +71,8 @@
 
 - name: Change Desktop Background
   script: change-bg.sh
+
+- name: Copy Bookmarks File over
+  copy:
+    src: browser/bookmarks_22_05_2023.html
+    dest: ~/bookmarks_22_05_2023.html
