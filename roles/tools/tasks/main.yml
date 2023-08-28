@@ -1,0 +1,12 @@
+---
+
+- name: Create Share Folder
+  file:
+    path: ~/pentest-tools
+    mode: 0755
+    state: directory
+
+- name: Copy all Share Tools over
+  copy:
+    src: share/
+    dest: ~/pentest-tools/
