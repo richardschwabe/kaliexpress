@@ -5,3 +5,4 @@ pipx_packages:
     - git+https://github.com/mpgn/CrackMapExec
     - pwncat-cs
     - git+https://github.com/bitsadmin/wesng.git
+    - impacket
