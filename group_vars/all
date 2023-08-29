@@ -7,3 +7,4 @@ pipx_packages:
     - git+https://github.com/bitsadmin/wesng.git
     - impacket
     - bbot
+    - git+https://github.com/cddmp/enum4linux-ng
