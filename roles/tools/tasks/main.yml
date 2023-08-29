@@ -17,4 +17,6 @@
     pkg:
     - seclists
     - dirsearch
+    - stegseek
+    - steghide
     state: present
