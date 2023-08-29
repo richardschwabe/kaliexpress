@@ -6,3 +6,4 @@ pipx_packages:
     - pwncat-cs
     - git+https://github.com/bitsadmin/wesng.git
     - impacket
+    - bbot
