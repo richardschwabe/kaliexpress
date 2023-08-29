@@ -19,4 +19,5 @@
     - dirsearch
     - stegseek
     - steghide
+    - nishang
     state: present
