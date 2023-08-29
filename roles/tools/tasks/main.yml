@@ -10,3 +10,11 @@
   copy:
     src: share/
     dest: ~/pentest-tools/
+
+- name: Install some pentest tools
+  become: true
+  apt:
+    pkg:
+    - seclists
+    - dirsearch
+    state: present
