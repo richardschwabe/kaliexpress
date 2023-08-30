@@ -51,7 +51,7 @@ This role will add the following applications:
 - dbeaver - a great database management tool
 - vscode - my IDE of choice
 - chrome - my preferred browser
-- golang - GO programming language
+- golang - GO programming language for [nuclei](github.com/projectdiscovery/nuclei)
 
 For personalisation it will install my personal
 `.zshrc` with various settings, such as aliases for `ls` and `cat`.
