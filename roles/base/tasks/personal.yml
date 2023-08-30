@@ -18,25 +18,10 @@
     mode: 0755
     state: directory
 
-- name: Copy MeloLGS Bold Italic
+- name: Copy MeloLGS Fonts
   copy:
-    src: "fonts/MesloLGS NF Bold Italic.ttf"
-    dest: "~/.local/share/fonts/MesloLGS NF Bold Italic.ttf"
-
-- name: Copy MeloLGS Italic
-  copy:
-    src: "fonts/MesloLGS NF Italic.ttf"
-    dest: "~/.local/share/fonts/MesloLGS NF Italic.ttf"
-
-- name: Copy MeloLGS Bold
-  copy:
-    src: "fonts/MesloLGS NF Bold.ttf"
-    dest: "~/.local/share/fonts/MesloLGS NF Bold.ttf"
-
-- name: Copy MeloLGS Regular
-  copy:
-    src: "fonts/MesloLGS NF Regular.ttf"
-    dest: "~/.local/share/fonts/MesloLGS NF Regular.ttf"
+    src: fonts/
+    dest: ~/.local/share/fonts/
 
 - name: Install Powerlevel10k
   shell: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -48,10 +33,10 @@
     dest: "~/.zshrc"
 
 - name : Install zsh-autosuggestions
-  shell: git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+  shell: git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 - name: Install zsh-syntax-highlighting
-  shell: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+  shell: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 - name: Copy .p10k.zsh
   copy:
