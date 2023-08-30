@@ -30,3 +30,6 @@
 
 - name: download OneRulePasswords
   shell: wget https://raw.githubusercontent.com/NotSoSecure/password_cracking_rules/master/OneRuleToRuleThemAll.rule -P ~/
+
+- name: install breach-parse
+  script: install-breach-parse.sh
