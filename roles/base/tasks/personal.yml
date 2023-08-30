@@ -64,6 +64,11 @@
     deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     state: present
 
+- name: Install Obsidian via .deb
+  become: true
+  apt:
+    deb: https://github.com/obsidianmd/obsidian-releases/releases/download/v1.3.7/obsidian_1.3.7_amd64.deb
+    state: present
 
 - name: Change Desktop Background
   script: change-bg.sh
