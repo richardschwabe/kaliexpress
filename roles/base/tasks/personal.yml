@@ -72,3 +72,6 @@
   copy:
     src: browser/bookmarks_22_05_2023.html
     dest: ~/bookmarks_22_05_2023.html
+
+- name: Import XFCE Panel Configuration
+  script: import-xfce-panel.sh
