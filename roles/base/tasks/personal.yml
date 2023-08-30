@@ -56,6 +56,13 @@
     - code
     - dbeaver
     - golang
+    - libssl-dev
+    - libbz2-dev
+    - libsqlite3-dev
+    - python3-tk
+    - liblzma-dev
+    - tk-dev
+    - libreadline-dev
     state: present
 
 - name: Install a Chrome via online .deb
