@@ -8,3 +8,4 @@ pipx_packages:
     - impacket
     - bbot
     - git+https://github.com/cddmp/enum4linux-ng
+    - ssh-audit
