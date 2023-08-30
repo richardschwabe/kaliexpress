@@ -47,6 +47,12 @@
     src: ".zshrc"
     dest: "~/.zshrc"
 
+- name : Install zsh-autosuggestions
+  shell: git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
+- name: Install zsh-syntax-highlighting
+  shell: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+
 - name: Copy .p10k.zsh
   copy:
     src: ".p10k.zsh"
