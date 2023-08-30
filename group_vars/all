@@ -9,3 +9,4 @@ pipx_packages:
     - bbot
     - git+https://github.com/cddmp/enum4linux-ng
     - ssh-audit
+    - mitm6
