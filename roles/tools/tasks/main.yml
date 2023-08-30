@@ -28,8 +28,14 @@
 - name: install rassetfinder by Richard
   script: install-rassetfinder.sh
 
+- name: Check if OneRulePasswords exists
+  stat:
+    path: ~/OneRuleToRuleThemAll.rule
+  register: OneRulePasswords
+
 - name: download OneRulePasswords
   shell: wget https://raw.githubusercontent.com/NotSoSecure/password_cracking_rules/master/OneRuleToRuleThemAll.rule -P ~/
+  when: not OneRulePasswords.stat.exists
 
 - name: install breach-parse
   script: install-breach-parse.sh
