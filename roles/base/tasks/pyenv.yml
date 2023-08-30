@@ -1,0 +1,9 @@
+---
+
+- name: Clone pyenv
+  git:
+    repo: https://github.com/pyenv/pyenv.git
+    dest: ~/.pyenv
+
+- name: Install Python Version
+  script: pyenv-installer.sh

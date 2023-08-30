@@ -26,3 +26,4 @@
 
 - include_tasks: pipx.yml
 - include_tasks: personal.yml
+- include_tasks: pyenv.yml

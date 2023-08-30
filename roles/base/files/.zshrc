@@ -282,4 +282,9 @@ alias l='ls -lh'
 
 alias cat='batcat'
 
+# PyEnv settings
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
