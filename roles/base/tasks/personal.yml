@@ -56,7 +56,6 @@
     - code
     - dbeaver
     - golang
-    - spotify-client
     state: present
 
 - name: Install a Chrome via online .deb
