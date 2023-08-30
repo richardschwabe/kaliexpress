@@ -21,3 +21,6 @@
     - steghide
     - nishang
     state: present
+
+- name: install nuclei
+  shell: go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest

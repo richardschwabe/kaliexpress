@@ -51,6 +51,7 @@
     - bat
     - code
     - dbeaver
+    - golang
     state: present
 
 - name: Install a Chrome via online .deb
