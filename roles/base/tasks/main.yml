@@ -4,6 +4,9 @@
   become: True
   script: add-ms-apt.sh
 
+- name: Add Spotify Repo to Apt
+  become: True
+  script: install-spotify.sh
 
 - name: Update & Upgrade
   become: True
