@@ -29,4 +29,4 @@
   script: install-rassetfinder.sh
 
 - name: download OneRulePasswords
-  script: wget https://raw.githubusercontent.com/NotSoSecure/password_cracking_rules/master/OneRuleToRuleThemAll.rule -P ~/
+  shell: wget https://raw.githubusercontent.com/NotSoSecure/password_cracking_rules/master/OneRuleToRuleThemAll.rule -P ~/
