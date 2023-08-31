@@ -56,6 +56,7 @@
     - code
     - dbeaver
     - golang
+    - flameshot
     - libssl-dev
     - libbz2-dev
     - libsqlite3-dev
