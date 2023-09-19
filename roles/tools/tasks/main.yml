@@ -39,3 +39,7 @@
 
 - name: install breach-parse
   script: install-breach-parse.sh
+
+
+- name: install hakrawler
+  shell: go install -v github.com/hakluke/hakrawler@latest
