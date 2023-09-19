@@ -47,3 +47,7 @@
 
 - name: install tomnomnom's gf
   shell: go install -v github.com/tomnomnom/gf@latest
+
+
+- name: install tomnomnom's anew
+  shell: go install -v github.com/tomnomnom/anew@latest
