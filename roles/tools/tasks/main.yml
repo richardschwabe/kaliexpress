@@ -43,3 +43,7 @@
 
 - name: install hakrawler
   shell: go install -v github.com/hakluke/hakrawler@latest
+
+
+- name: install tomnomnom's gf
+  shell: go install -v github.com/tomnomnom/gf@latest
