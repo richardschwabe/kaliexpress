@@ -1,5 +1,4 @@
 ---
-
 - name: Create Share Folder
   file:
     path: ~/pentest-tools
@@ -15,11 +14,11 @@
   become: true
   apt:
     pkg:
-    - seclists
-    - dirsearch
-    - stegseek
-    - steghide
-    - nishang
+      - seclists
+      - dirsearch
+      - stegseek
+      - steghide
+      - nishang
     state: present
 
 - name: install nuclei
@@ -40,14 +39,14 @@
 - name: install breach-parse
   script: install-breach-parse.sh
 
-
 - name: install hakrawler
   shell: go install -v github.com/hakluke/hakrawler@latest
-
 
 - name: install tomnomnom's gf
   shell: go install -v github.com/tomnomnom/gf@latest
 
-
 - name: install tomnomnom's anew
   shell: go install -v github.com/tomnomnom/anew@latest
+
+- name: install tlsx
+  shell: go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
