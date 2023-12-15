@@ -51,7 +51,6 @@
   become: true
   apt:
     pkg:
-    - exa
     - bat
     - code
     - dbeaver
