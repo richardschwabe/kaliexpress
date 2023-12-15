@@ -2,7 +2,7 @@ user:
     name: bs
 
 pipx_packages:
-    - crackmapexec
+    - git+https://github.com/Pennyw0rth/NetExec
     - pwncat-cs
     - git+https://github.com/bitsadmin/wesng.git
     - impacket
