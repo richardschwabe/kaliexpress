@@ -2,5 +2,5 @@
   become: False
   roles:
     - { role: base }
-    - { role: docker }
     - { role: tools }
+    # - { role: docker }
